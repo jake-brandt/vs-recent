@@ -1,0 +1,12 @@
+#compdef vsr
+
+_vsr() {
+  rawFolderEntries=$( \
+    cat ~/Library/Application\ Support/Code/storage.json | \
+    grep -ioP '"folderUri":[^"]*"file://\K([^"]+)' | \
+    tr '\n' ' ')
+  zstyle ':completion:*:*:vsr:*:*' sort false
+  _arguments "1:dirs:($rawFolderEntries)"
+}
+
+_vsr "$@"
