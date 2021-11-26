@@ -32,8 +32,8 @@ list out VS Code's recently-opened paths:
     a symlink to `vsr.sh` in `/usr/local/bin/vsr` and alias `vsr` to
     `. vsr` to allow the script to run in the current shell context.
 
-4. Upon successful installation, follow the on-screen instructions to
-   restart your shell or `source ~/.zshrc` to activate VSR.
+4. Upon successful installation, follow the on-screen instructions 
+to restart your shell or `source ~/.zshrc` to activate VSR.
 
 ## Usage
 
@@ -59,3 +59,34 @@ for other systems (Linux, Unix, WSL, Git Bash on Windows) will be
 added.
 
 * VSR currently expects your VS Code user files to be stored in `~/Library/Application Support/Code`
+
+## Removing (uninstalling) VSR
+
+To remove VSR (after a successful installation only), run:
+
+```sh
+vsr --uninstall
+```
+
+Unpon successful completion, you are welcome to delete the directory
+containing VSR.
+
+## Contributing to the project
+
+All are invited to contribute to VS-Recent ❤️! It is requested that
+priority be placed on bugs (either existing or newly-tracked by
+you); but new features submitted by way of pull request will
+happily be reviewed and merged into the mainline if they improve
+the stability or value of "CD-ing into recent VS Code directories".
+
+Found a bug? Please feel free to create a new ticket.
+
+> If you would like to add support for other applications, please
+> "adapt" the project by forking to a new project; being certain to
+> rename the command from `vsr` to something more relevant to your
+> new use case.
+
+## Copyright
+
+This project is copyright (c) 2021 Jake Brandt, contributors and
+maintainers
